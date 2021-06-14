@@ -94,7 +94,35 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return add; });\n/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common */ \"./src/common.js\");\n\n\nfunction add(a, b) {\n  return Object(_common__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(a + b);\n}\n\n//# sourceURL=webpack:///./src/add.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return add; });
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common */ "./src/common.js");
+
+
+function add(a, b) {
+  return Object(_common__WEBPACK_IMPORTED_MODULE_0__["default"])(a + b);
+}
+
+/***/ }),
+
+/***/ "./src/collection.js":
+/*!***************************!*\
+  !*** ./src/collection.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const fn1 = () => {
+  console.log('fn1');
+};
+
+const fn2 = () => {
+  console.log('fn2');
+};
+
+/* harmony default export */ __webpack_exports__["default"] = ({ fn1, fn2 });
 
 /***/ }),
 
@@ -106,7 +134,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return commonPrint; });\nfunction commonPrint(msg) {\n  let logInfo = `this is a common module: ${msg}`;\n\n  return logInfo;\n}\n\n//# sourceURL=webpack:///./src/common.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return commonPrint; });
+function commonPrint(msg) {
+  let logInfo = `this is a common module: ${msg}`;
+
+  return logInfo;
+}
 
 /***/ }),
 
@@ -118,7 +152,21 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _add__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./add */ \"./src/add.js\");\n/* harmony import */ var _multiply__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./multiply */ \"./src/multiply.js\");\n\n\n\nconst addResult = Object(_add__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(1, 2);\nconst mulResult = Object(_multiply__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(3, 4);\n\nconsole.log(addResult);\nconsole.log(mulResult);\n\n//# sourceURL=webpack:///./src/index.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _add__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./add */ "./src/add.js");
+/* harmony import */ var _multiply__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./multiply */ "./src/multiply.js");
+/* harmony import */ var _collection__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./collection */ "./src/collection.js");
+
+
+
+
+const addResult = Object(_add__WEBPACK_IMPORTED_MODULE_0__["default"])(1, 2);
+const mulResult = Object(_multiply__WEBPACK_IMPORTED_MODULE_1__["default"])(3, 4);
+
+console.log(addResult);
+console.log(mulResult);
+
+_collection__WEBPACK_IMPORTED_MODULE_2__["default"].fn1();
 
 /***/ }),
 
@@ -130,8 +178,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _add
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return multiply; });\n/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common */ \"./src/common.js\");\n\n\nfunction multiply(a, b) {\n  return Object(_common__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(a + b);\n}\n\n//# sourceURL=webpack:///./src/multiply.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return multiply; });
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common */ "./src/common.js");
+
+
+function multiply(a, b) {
+  return Object(_common__WEBPACK_IMPORTED_MODULE_0__["default"])(a + b);
+}
 
 /***/ })
 
 /******/ });
+//# sourceMappingURL=index.js.map
