@@ -11,3 +11,21 @@ A simple FE assets bundler
 version: ^4.7.0
 
 The above can see generated resources, like chunks & bundles
+
+## Webpack Modules Explanation
+Modules refers to module system, like AMD, CJS, ESM, Assets(image, font, video, audio, json).
+
+## Chunks & Bundles
+1. Chunks are the output in the middle of the build process.
+```js
+eg: entry: {
+  index: 'xxx.js',
+  search: 'xxx.js',
+  list: 'xxx.js'
+}
+
+index, search, list are called chunks
+```
+
+2. Bundles are the output of the whole webpack build process
+
